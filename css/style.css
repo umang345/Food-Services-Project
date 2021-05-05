@@ -13,11 +13,15 @@
 #navbar{
     display: flex;
     align-items: center;
+    position: relative;
+    top: 0px;
 }
 #navbar::before{
     content: "";
     background-color: black;
     position: absolute;
+    top: 0px;
+    left: 0px;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -26,7 +30,7 @@
 
 /*Navigation Bar: Logo and Image */
 #logo{
-    margin: 10px 34px;
+    margin: 7px 34px;
 }
 #logo img{
     height: 100px;
@@ -36,9 +40,6 @@
 }
 
 /*Navigation Bar: List Styling  */
-#navbar{
-    position: relative;
-}
 
 
 #navbar ul{
@@ -67,7 +68,7 @@
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 400px;
+    height: 586px;
     justify-content: center;
     align-items: center;
 }
@@ -76,9 +77,13 @@
     content: "";
     background: url('../bg1.jpg') no-repeat center center/cover;
     position: absolute;
+    margin-top:0px;
+    padding-top: 0px;
+    top: 0px;
+    left: 0px;
     height: 100%;
     width: 100%;
-    z-index: -1;
+    z-index: -2;
     opacity: 0.89;
 }
 #home h1{
@@ -93,10 +98,38 @@
     font-family: 'Bree Serif', serif;
 }
 
+/* Services Section  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+#services .box img{
+    height: 160px;
+    margin:auto;
+    display: block;
+}
+/* #services h2{
+    margin-top: 130px;
+} */
+#services{}
+
+
+
 /* Utility Classes */
 .h-primary{
     font-size: 3.8rem;
-    padding:12px
+    padding:12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding:12px;
 }
 .btn{
     padding: 6px 20px;
@@ -106,4 +139,8 @@
     margin: 17px;
     font-size: 1.5rem;
     border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
 }
