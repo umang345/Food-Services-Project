@@ -14,6 +14,15 @@
     display: flex;
     align-items: center;
 }
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
 
 /*Navigation Bar: Logo and Image */
 #logo{
@@ -30,20 +39,11 @@
 #navbar{
     position: relative;
 }
+
+
 #navbar ul{
     display: flex;
 }
-
-#navbar::before{
-    content: "";
-    background-color: black;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.4;
-}
-
 #navbar ul li{
     /* color: white; */
     list-style: none;
@@ -59,4 +59,39 @@
 #navbar ul li a:hover{
     color: black;
     background-color: white;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding:12px
 }
