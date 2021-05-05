@@ -43,6 +43,7 @@
 
 #navbar ul{
     display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
 }
 #navbar ul li{
     /* color: white; */
@@ -83,15 +84,20 @@
 #home h1{
     color: white;
     text-align: center;
+    font-family: 'Bree Serif', serif;
 }
 #home p{
     color: white;
     text-align: center;
     font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
 }
 
 /* Utility Classes */
 .h-primary{
     font-size: 3.8rem;
     padding:12px
+}
+.btn{
+    
 }
