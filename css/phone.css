@@ -1,6 +1,7 @@
 /* Navigation Section  */
 #navbar{
     flex-direction: column;
+    position: relative;
 }
 #navbar ul li a{
     font-size: 1rem;
