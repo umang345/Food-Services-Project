@@ -168,7 +168,7 @@ footer{
 /* Client Section  */
 #client-section{
     position: relative;
-    height: 344px;
+    /* height: 344px; */
 }
 #client-section::before{
     content: "";
