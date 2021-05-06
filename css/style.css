@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* CSS Variables */
 :root{
     --navbar-height: 59px;
